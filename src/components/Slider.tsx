@@ -43,17 +43,15 @@ const Slider = () => {
 
   return (
     <>
-      <div className="grid items-end grid-col-7 ">
-        <img
-          className="w-full h-full rounded-t-none hidden sm:block h-auto col-span-4"
-          src={slidesDesk[currentIndex].src}
-          alt="this is a home "
-        />
+      <div className="grid grid-col-7 ">
+        <div className="w-auto h-auto rounded-t-none hidden sm:block h-auto col-start-1 col-span-4">
+          <img src={slidesDesk[currentIndex].src} alt="this is a home " />
+        </div>
 
-        <div className="col-span-3 col-start-5 grid grid-col-3">
+        <div className="col-span-3">
           <div
-            // style={{ gridArea: '1/5/1/6', zIndex: '10' }}
-            className="py-36 items-center "
+            // style={{ gridArea: '1/6/1/7', zIndex: '20' }}
+            className=" items-center "
           >
             <h1 className="font-myFont text-xl font-bold ">
               Discove innovatove way to decorate
@@ -76,20 +74,23 @@ const Slider = () => {
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="flex py-10">
-            <div
-              onClick={nextSlide}
-              className=" right-0 bg-black text-white hover:bg-stone-700  md:order-last "
-            >
-              <img src={rightArrow} />
-            </div>
-            <div
-              onClick={prevSlide}
-              className=" right-12 bg-black text-white hover:bg-stone-700  md:order-first "
-            >
-              <img src={leftArrow} />
-            </div>
+        <div
+          className="flex col-start-5 col-end-6 "
+          // style={{ gridArea: '1/5/1/6', zIndex: '10' }}
+        >
+          <div
+            onClick={nextSlide}
+            className=" right-0 bg-black text-white hover:bg-stone-700 md:order-last "
+          >
+            <img src={rightArrow} />
+          </div>
+          <div
+            onClick={prevSlide}
+            className=" right-12 bg-black text-white hover:bg-stone-700 md:order-first "
+          >
+            <img src={leftArrow} />
           </div>
         </div>
       </div>
