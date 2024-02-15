@@ -43,20 +43,24 @@ const Slider = () => {
 
   return (
     <>
-      <div className="grid grid-col-7 ">
-        <div className="w-auto h-auto rounded-t-none hidden sm:block h-auto col-start-1 col-span-4">
-          <img src={slidesDesk[currentIndex].src} alt="this is a home " />
+      <div className="grid grid-cols-7 ">
+        <div
+          className=" rounded-t-none hidden sm:block h-auto "
+          style={{ gridArea: '1/1/1/5' }}
+        >
+          <img
+            className="object-cover w-full"
+            src={slidesDesk[currentIndex].src}
+            alt="this is a home "
+          />
         </div>
 
-        <div className="col-span-3">
-          <div
-            // style={{ gridArea: '1/6/1/7', zIndex: '20' }}
-            className=" items-center "
-          >
+        <div className="self-center ml-16" style={{ gridArea: '1/5/1/8' }}>
+          <div className="">
             <h1 className="font-myFont text-xl font-bold ">
               Discove innovatove way to decorate
             </h1>
-            <div className="font-myFont text-sm ">
+            <div className="font-myFont text-sm">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Exexplicabo aperiam animi non labore magni commodi et dolor iure
@@ -67,9 +71,9 @@ const Slider = () => {
               </p>
             </div>
 
-            <div id="about" className="">
+            <div className="flex">
               <h3 className="font-myFont font-bold">S H O P N O W</h3>
-              <div className="pl-4 mt-1 text-xl">
+              <div className="pl-4 mt-1 text-xl ">
                 <FaArrowRight />
               </div>
             </div>
@@ -77,20 +81,23 @@ const Slider = () => {
         </div>
 
         <div
-          className="flex col-start-5 col-end-6 "
-          // style={{ gridArea: '1/5/1/6', zIndex: '10' }}
+          className=" left-0 bg-black self-end p-10 "
+          style={{ gridArea: '1/5/1/6', zIndex: '10' }}
         >
-          <div
-            onClick={nextSlide}
-            className=" right-0 bg-black text-white hover:bg-stone-700 md:order-last "
-          >
-            <img src={rightArrow} />
-          </div>
-          <div
-            onClick={prevSlide}
-            className=" right-12 bg-black text-white hover:bg-stone-700 md:order-first "
-          >
-            <img src={leftArrow} />
+          <div className="flex justify-between grid-row-start-auto ">
+            <div
+              onClick={nextSlide}
+              className=" bg-black left text-white md:order-last hover:bg-gray-700"
+            >
+              <img src={rightArrow} />
+            </div>
+
+            <div
+              onClick={prevSlide}
+              className="  bg-black text-white md:order-first hover:bg-gray-700"
+            >
+              <img src={leftArrow} />
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +108,7 @@ const Slider = () => {
         alt="this is a home "
       />
 
-      <h1 className="absolute top-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold font-myFont text-2xl">
+      <h1 className="absolute top-16 left-16 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold font-myFont text-2xl">
         Room
       </h1>
 
