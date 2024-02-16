@@ -21,12 +21,9 @@ function Navbar() {
     <>
       <div
         // onClick={handleClick}
-        className="relative block md:hidden z-20"
+        className="relative z-20"
       >
-        <div
-          onClick={handleClick}
-          className="absolute  top-6 ml-10 text-white text-xl "
-        >
+        <div onClick={handleClick} className="top-6 ml-10 text-white text-xl ">
           <CiMenuFries />
         </div>
 

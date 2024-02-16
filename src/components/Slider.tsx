@@ -57,7 +57,7 @@ const Slider = () => {
           </div>
           <div className="self-center ml-16" style={{ gridArea: '1/5/1/8' }}>
             <div className="">
-              <h1 className="font-myFont text-xl font-bold ">
+              <h1 className="font-myFont text-4xl font-bold ">
                 Discove innovatove way to decorate
               </h1>
               <div className="font-myFont text-sm">
@@ -86,13 +86,13 @@ const Slider = () => {
             <div className="flex justify-between grid-row-start-auto justify-evenly ">
               <div
                 onClick={nextSlide}
-                className=" bg-black left text-white md:order-last hover:bg-gray-700 p-8"
+                className=" bg-black left text-white order-last hover:bg-gray-700 p-8"
               >
                 <img src={rightArrow} />
               </div>
               <div
                 onClick={prevSlide}
-                className=" bg-black text-white md:order-first hover:bg-gray-700 p-8"
+                className=" bg-black text-white order-first hover:bg-gray-700 p-8"
               >
                 <img src={leftArrow} />
               </div>
@@ -116,16 +116,38 @@ const Slider = () => {
           <div className="flex transform bg-black self-end ">
             <div
               onClick={nextSlide}
-              className="bg-black text-white hover:bg-stone-700 md:order-last p-10"
+              className="bg-black text-white hover:bg-stone-700 order-last p-10"
             >
               <img className="w-full h-full object-cover" src={rightArrow} />
             </div>
             <div
               onClick={prevSlide}
-              className=" bg-black text-white hover:bg-stone-700  md:order-first p-10 "
+              className=" bg-black text-white hover:bg-stone-700 order-first p-10 "
             >
               <img src={leftArrow} />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="m-20 lg:hidden">
+        <h1 className="font-myFont text-4xl font-bold ">
+          Discove innovatove way to decorate
+        </h1>
+        <div className="font-myFont text-sm">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Exexplicabo aperiam animi non labore magni commodi et dolor iure
+            voluptatem! Amet molestias nulla vel dolor perferendis error rerum
+            voluptatum officia at tempore omnis esse eaque illum, fugiat,
+            placeat iure quidem, officiis vero earum repudiandae accusantium
+            mollitia! Repellendus omnis nostrum impedit.
+          </p>
+        </div>
+        <div className="flex mb-10">
+          <h3 className="font-myFont font-bold">S H O P N O W</h3>
+          <div className="pl-4 mt-1 text-xl ">
+            <FaArrowRight />
           </div>
         </div>
       </div>
