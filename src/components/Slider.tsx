@@ -99,18 +99,23 @@ const Slider = () => {
             </div>
           </div>
         </div>
-        <h1 className="absolute top-16 left-16 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold font-myFont text-2xl">
-          Room
+        <h1 className="absolute top-16 left-16 transform -translate-x-1/2 -translate-y-1/2 text-white font-myFont text-4xl">
+          room
         </h1>
       </div>
 
       {/* Mobile  */}
       <div className="relative lg:hidden ">
-        <img
-          className="w-full h-auto rounded-t-none block"
-          src={slides[currentIndex].src}
-          alt="this is a home "
-        />
+        <div className="relative flex justify-center">
+          <h1 className="absolute text-white font-myFont text-2xl mt-6">
+            room
+          </h1>
+          <img
+            className="w-full h-auto rounded-t-none block"
+            src={slides[currentIndex].src}
+            alt="this is a home "
+          />
+        </div>
 
         <div className="absolute bottom-0 right-0">
           <div className="flex transform bg-black self-end ">
@@ -144,7 +149,7 @@ const Slider = () => {
             mollitia! Repellendus omnis nostrum impedit.
           </p>
         </div>
-        <div className="flex mb-10">
+        <div className="flex">
           <h3 className="font-myFont font-bold">S H O P N O W</h3>
           <div className="pl-4 mt-1 text-xl ">
             <FaArrowRight />

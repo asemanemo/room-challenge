@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <Slider />
-      <div className="md:justify-start">
+      <div className="flex justify-between">
         <div className="absolute top-6 lg:hidden">
           <Navbar />
         </div>

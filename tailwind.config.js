@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      myFont: ["Fira Sans", "sans-serif"],
+      myFont: ["League Spartan", "sans-serif"],
     },
   },
   plugins: [],
