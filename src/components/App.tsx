@@ -21,14 +21,11 @@ function App() {
         </div>
 
         <div className="">
-          <div
-          // style={{ gridArea: '1/1/1/6', zIndex: '10' }}
-          // className="md:col-span-4"
-          ></div>
+          <div></div>
         </div>
       </div>
 
-      <div className="grid grid-cols-7">
+      <div className=" lg:grid lg:grid-cols-7">
         <div className="col-span-2">
           <img
             className="w-full h-full"
@@ -37,7 +34,7 @@ function App() {
           />
         </div>
 
-        <div className="col-span-3 self-center ml-10">
+        <div className="lg:col-span-3 self-center ml-10">
           <h1 className="font-myFont text-xl font-bold">About our furniture</h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
