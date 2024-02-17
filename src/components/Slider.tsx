@@ -9,6 +9,7 @@ import heroImageDesk from '../images/desktop-image-hero-1.jpg';
 import heroImageDesk2 from '../images/desktop-image-hero-2.jpg';
 import heroImageDesk3 from '../images/desktop-image-hero-3.jpg';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 interface Slide {
   src: string;
@@ -98,10 +99,27 @@ const Slider = () => {
               </div>
             </div>
           </div>
+          {/*  my Navbar */}
+          <div className="flex ml-6 mt-4" style={{ gridArea: '1/1/1/5' }}>
+            <h1 className="text-white font-myFont text-4xl">room</h1>
+            <div className="flex text-white font-myFont text-xl ml-10 mt-2 self-start">
+              <ul className="px-6 hover:underline ">home</ul>
+              <ul className="px-6 hover:underline">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
+                  about
+                </Link>
+              </ul>
+              <ul className="px-6 hover:underline">shop</ul>
+              <ul className="px-6 hover:underline">contact</ul>
+            </div>
+          </div>
         </div>
-        <h1 className="absolute top-16 left-16 transform -translate-x-1/2 -translate-y-1/2 text-white font-myFont text-4xl">
-          room
-        </h1>
       </div>
 
       {/* Mobile  */}

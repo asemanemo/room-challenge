@@ -19,7 +19,7 @@ function App() {
         </div>
       </div>
 
-      <div className=" lg:grid lg:grid-cols-7 ">
+      <div id="about" className=" lg:grid lg:grid-cols-7 ">
         <div className="col-span-2">
           <img
             className="w-full h-full"
@@ -36,11 +36,7 @@ function App() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda,
             saepe atque. Autem voluptates sed optio molestiae totam dolorem
             quibusdam. Culpa, a molestias! Officiis minima autem id beatae eaque
-            totam quidem deleniti, hic asperiores minus cupiditate sint eos,
-            incidunt doloremque corrupti recusandae ut voluptatum cum sit
-            repellat! Illum, ullam temporibus, odit fugit ex illo dolorem
-            ratione itaque quam vitae molestias et doloribus neque ea nostrum
-            omnis dicta. Non velit aut odit!
+            totam quidem deleniti, hic asperiores minus cupiditate sint eos
           </p>
         </div>
 
