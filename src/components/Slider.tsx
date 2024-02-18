@@ -87,13 +87,13 @@ const Slider = () => {
             <div className="flex justify-between grid-row-start-auto justify-evenly ">
               <div
                 onClick={nextSlide}
-                className=" bg-black left text-white order-last hover:bg-gray-700 p-8"
+                className=" bg-black left text-white order-last hover:bg-stone-700 p-8"
               >
                 <img src={rightArrow} />
               </div>
               <div
                 onClick={prevSlide}
-                className=" bg-black text-white order-first hover:bg-gray-700 p-8"
+                className=" bg-black text-white order-first hover:bg-stone-700 p-8"
               >
                 <img src={leftArrow} />
               </div>
